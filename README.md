@@ -10,8 +10,8 @@
 This Qt-based application renders 3D visualizations of mathematical functions using Bessel interpolation for smooth surfaces. It leverages the graphical power of OpenGL for rendering and provides an interactive interface with Qt for users to explore and manipulate mathematical landscapes in real-time.
 
 
-<img src="img/Screenshot from 2023-11-08 14-34-43.png" width="595"/> <img src="img/Screenshot from 2023-11-08 14-35-43.png" width="595"/> 
-<img src="img/Screenshot from 2023-11-08 14-37-49.png" width="595"/> <img src="img/Screenshot from 2023-11-08 14-38-03.png" width="595"/> 
+<img src="img/photo_2023-11-08 16.49.02.jpeg" width="595"/> <img src="img/photo_2023-11-08 16.49.04.jpeg" width="595"/> 
+<img src="img/photo_2023-11-08 16.49.06.jpeg" width="595"/> <img src="img/photo_2023-11-08 16.49.00.jpeg" width="595"/> 
 
 
 ## Key Features
