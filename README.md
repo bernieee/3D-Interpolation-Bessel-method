@@ -7,54 +7,58 @@
 ![OpenGL](https://img.shields.io/badge/OpenGL-%23FFFFFF.svg?style=for-the-badge&logo=opengl)
 
 ## Overview
-A C++ library for performing Bessel interpolations of 3D function, equipped with a Qt-based GUI for visualization and manipulation of data points.
+This Qt-based application renders 3D visualizations of mathematical functions using Bessel interpolation for smooth surfaces. It leverages the graphical power of OpenGL for rendering and provides an interactive interface with Qt for users to explore and manipulate mathematical landscapes in real-time.
+
 
 <img src="img/Screenshot from 2023-11-08 14-34-43.png" width="595"/> <img src="img/Screenshot from 2023-11-08 14-35-43.png" width="595"/> 
 <img src="img/Screenshot from 2023-11-08 14-37-49.png" width="595"/> <img src="img/Screenshot from 2023-11-08 14-38-03.png" width="595"/> 
 
+
 ## Key Features
-- **Interpolation Methods**: Implements Bessel and cubic spline interpolation for data estimation.
-- **Function Analysis**: Evaluates mathematical functions and derivatives for precise interpolation.
-- **Graphical User Interface**: Features interactive visualization of data points and interpolation results.
-- **Adaptive Parameters**: Allows dynamic adjustment of interval range and point density.
-- **Error Visualization**: Displays discrepancies between interpolated values and actual function data.
-- **Command-Line Interface**: Supports initial parameter configuration via CLI.
+- **3D Rendering**: Visualizes mathematical functions in a 3D space.
+- **Interactive Control**: Rotate, scale, and translate the view using mouse inputs.
+- **Dynamic Visualization**: Change the rendered functions and methods via GUI controls.
+- **User Interface**: Utilizes Qt's `QAction`, `QMenuBar`, and `QToolBar` for in-app options.
+- **Scene Customization**: Adjust parameters such as function type, disturbance levels, number of points.
+- **Command-Line Arguments**: Supports initialization parameters through the command line for advanced users.
+
 
 ## Supported Functions
-The `func` function can evaluate the following mathematical expressions based on the provided `func_id`:
-- `func_id = 0`: `f(x) = 1`.
-- `func_id = 1`: `f(x) = x`.
-- `func_id = 2`: `f(x) = x^2`.
-- `func_id = 3`: `f(x) = x^3`.
-- `func_id = 4`: `f(x) = x^4`.
-- `func_id = 5`: `f(x) = exp(x)`.
-- `func_id = 6`: `f(x) = 1 / (25 * x^2 + 1)`.
 
+The application can visualize the following mathematical functions in 3D space, selectable by the `func_id` parameter:
+
+- `func_id = 0`: `f(x, y) = 1`
+- `func_id = 1`: `f(x, y) = x`
+- `func_id = 2`: `f(x, y) = y`
+- `func_id = 3`: `f(x, y) = x + y`
+- `func_id = 4`: `f(x, y) = sqrt(x^2 + y^2)`
+- `func_id = 5`: `f(x, y) = x^2 + y^2`
+- `func_id = 6`: `f(x, y) = exp(x^2 - y^2)`
+- `func_id = 7`: `f(x, y) = 1 / (25(x^2 + y^2) + 1)`
   
 ## Install
 
 ```sh
-git clone git@github.com:olyandrevn/2D-Interpolation-Bessel-and-Spline-methods.git
+git clone git@github.com:olyandrevn/3D-Interpolation-Bessel-method.git
 ```
 
 ## Usage
 
 ```sh
-./2D_interpolation [a] [b] [n] [func_id]
+./3D_interpolation [nx] [ny] [func_id] [eps] [ax] [by] [bx] [ay]
 ```
 
-```[a] [b]```: interval for interpolation
+```[ax] [bx], [ay] [by]```: intervals for interpolation
 
-```[n]```: number of points
+```[nx] [ny]```: numbers of points
 
 ```[func_id]```: function identifier for selection
-
 
 
 ## Run on default parameters
 
 ```sh
-./2D_interpolation -10 10 5 0
+./3D_interpolation 5 5 0 1e-6 -1 1 1 -1
 ```
 
 ## Author
