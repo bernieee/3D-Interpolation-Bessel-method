@@ -45,6 +45,8 @@ git clone git@github.com:olyandrevn/3D-Interpolation-Bessel-method.git
 ## Usage
 
 ```sh
+qmake
+make
 ./3D_interpolation [nx] [ny] [func_id] [eps] [ax] [by] [bx] [ay]
 ```
 
