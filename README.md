@@ -62,10 +62,3 @@ make
 ```sh
 ./3D_interpolation 5 5 0 1e-6 -1 1 1 -1
 ```
-
-## Author
-
-👤 **Olga Kolomyttseva**
-
-* Github: [@olyandrevn](https://github.com/olyandrevn)
-* LinkedIn: [@olyandrevn](https://linkedin.com/in/olyandrevn)
